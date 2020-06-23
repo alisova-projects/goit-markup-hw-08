@@ -1,0 +1,10 @@
+@mixin colorTextDecor($color) {
+  color: $color;
+  text-decoration: none;
+}
+
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
