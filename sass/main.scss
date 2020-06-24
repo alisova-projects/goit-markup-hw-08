@@ -4,6 +4,7 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './utils/visually-hidden';
+@import './utils/breakpoints';
 
 @import './components/shared/common';
 @import './components/shared/logo';
@@ -14,7 +15,6 @@
 @import './components/header/contacts';
 
 @import './components/studio/hero';
-@import './components/studio/modal';
 @import './components/studio/features';
 @import './components/studio/occupation';
 @import './components/studio/team';
@@ -24,3 +24,5 @@
 @import './components/footer/address';
 @import './components/footer/form';
 @import './components/footer/socials';
+
+@import './components/modal';

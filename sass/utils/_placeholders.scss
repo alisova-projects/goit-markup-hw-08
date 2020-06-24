@@ -10,6 +10,18 @@
   line-height: 1.19;
 }
 
+%logo__mob {
+  display: block;
+
+  color: $logoColor;
+
+  font-family: $logoFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
 %contact-info__link--icon {
   display: block;
   margin-right: 10px;
@@ -18,7 +30,6 @@
 }
 
 %list {
-  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -65,5 +76,16 @@
   padding-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
+  /* outline: 1px solid black; */
+}
+
+%container__mob {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   /* outline: 1px solid black; */
 }

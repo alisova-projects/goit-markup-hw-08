@@ -1,5 +1,12 @@
+.page-footer__socials {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .socials__list {
   @extend %list;
+  @include centeredFlex;
+  // display: flex;
 }
 
 .socials__item:not(:last-child) {

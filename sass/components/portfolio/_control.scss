@@ -1,7 +1,7 @@
 /* Фильтр */
 
 .project__container {
-  @extend %container;
+  // @extend %container;
 }
 
 .filter__button {
@@ -37,6 +37,7 @@
 
 .filter__list {
   @extend %list;
+  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }

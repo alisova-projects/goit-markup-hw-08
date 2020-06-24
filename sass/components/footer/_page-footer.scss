@@ -2,13 +2,17 @@
 .page-footer {
   color: $tertiaryTextColor;
   background-color: $tertiaryBgColor;
+  width: 480px;
 
   &__container {
-    @extend %container;
-    display: flex;
+    // @extend %container;
+    @extend %container__mob;
+
+    // display: flex;
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
+    height: 603px;
 
     padding-top: 60px;
     padding-bottom: 60px;

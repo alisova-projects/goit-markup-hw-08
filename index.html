@@ -4,15 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
-    /> -->
-    <!-- <link rel="stylesheet" href="./css/common.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -24,40 +19,50 @@
 
     <header class="page-header">
       <div class="page-header__container">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="page-header__logo"><span lang="en">Web<span lang="en"  class="page-logo"> Studio</span></a>
-    
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./contacts.html" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
 
-        <ul class="contact-info__list">
-          <li class="contact-info__item">
-            <a href="mailto:info@devstudio.com" aria-label="Электронная почта"
-            class="contact-info__link">
-              <svg class="contact-info__link--icon-mail" width="16" height="11.2">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-            info@devstudio.com</a>
-          </li>
-          <li class="contact-info__item">
-            <a href="tel:+380961111111" aria-label="Телефон"
-            class="contact-info__link">
-              <svg class="contact-info__link--icon-phone" width="10" height="15">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>   
-            +38 096 111 11 11</a>
-          </li>
-        </ul>
+        <a href="./index.html" class="page-header__logo"><span lang="en">Web<span lang="en"  class="page-logo"> Studio</span></a>
+        
+        <button type="button" class="menu__button" aria-expanded="false" aria-controls="page-header__menu" data-menu-button>
+          <svg class="menu__button--icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use href="./images/sprite.svg#icon-cross_40px" class="menu__button--icon-cross_40px"></use>
+            <use href="./images/sprite.svg#icon-menu" class="menu__button--icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="page-header__menu" id="page-header__menu" data-menu>
+            <nav class="page-header__nav">  
+              <ul class="site-nav">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./contacts.html" class="site-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <a href="mailto:info@devstudio.com" aria-label="Электронная почта"
+                class="contact-info__link">
+                  <svg class="contact-info__link--icon-mail" width="16" height="11.2">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                info@devstudio.com</a>
+              </li>
+              <li class="contact-info__item">
+                <a href="tel:+380961111111" aria-label="Телефон"
+                class="contact-info__link">
+                  <svg class="contact-info__link--icon-phone" width="10" height="15">
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>   
+                +38 096 111 11 11</a>
+              </li>
+            </ul>
+        </div>
 
       </div>
     </header>
@@ -69,65 +74,6 @@
           <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
           <button href="#" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
-
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal is-hidden">
-
-            <form class="form" autocomplete="off">
-
-              <div class="close" data-modal-close>
-                 <svg class="close--icon" width="11" height="11">
-                   <use href="./images/sprite.svg#icon-cross"></use>
-                 </svg>
-              </div>
-              
-              <h3 class="form__title">Оставьте свои данные, мы вам перезвоним</h3>
-             
-                  <label class="form__field">
-                    <input class="form__input" type="text" name="name" placeholder=" " autofocus >
-                    <span class="form__label">Имя</span>
-                    <svg class="form__icon" width="18" height="18">
-                      <use href="./images/sprite.svg#icon-person"></use>
-                    </svg>
-                  </label>
-
-                  <label class="form__field">
-                    <input class="form__input" type="tel" name="tel" placeholder=" ">
-                    <span class="form__label">Телефон</span>
-                    <svg class="form__icon" width="18" height="18">
-                      <use href="./images/sprite.svg#icon-tel"></use>
-                    </svg>                  
-                  </label>
-
-                  <label class="form__field">                    
-                    <input class="form__input" type="email" name="email" placeholder=" ">
-                    <span class="form__label">Почта</span>
-                    <svg class="form__icon" width="18" height="18">
-                      <use href="./images/sprite.svg#icon-email"></use>
-                    </svg>
-                  </label>
-
-                  <label class="form__field">                    
-                    <textarea class="comment " name="comment" rows="10" placeholder=" "></textarea>
-                    <span class="form__label form__label--comment">Комментарий</span>
-                  </label>
-
-                  <label class="form__field form__field--checkbox">
-                    <input type="checkbox" name="policy" class="checkbox">
-                    <span class="checkbox__icon"></span>
-                    <span class="form__policy">Соглашаюсь с рассылкой и принимаю 
-                      <a href="#" class="form__policy--link">Условия договора</a>
-                    </span>
-                  </label>
-
-                  <div class="form__button">
-                    <button class="form__button--submit" type="submit">Отправить</button>
-                  </div>
-                  
-            </form>
-          </div>
-        </div>
-
       </section>
 
       <!-- Светло-серый фон -->
@@ -241,11 +187,17 @@
 
           <ul class="team__card-set">
             <li class="card-set__item">
-              <img
-                src="./images/John_Smith.jpg"
+              <!-- <img
+                src="./images/Nikolai_Kucherenko.jpg"
                 width="270"
                 height="260"
-                alt="Джон Смит"
+                alt="Николай Кучеренко"
+              /> -->
+              <img
+                src="./images/Nikolai_Kucherenko_mobile.jpg"
+                width="450"
+                height="320"
+                alt="Николай Кучеренко"
               />
               <div class="card__content">
                 <h3 class="card__name">Николай Кучеренко</h3>
@@ -297,11 +249,17 @@
             </li>
 
             <li class="card-set__item">
-              <img
-                src="./images/Marta_Stewart.jpg"
+              <!-- <img
+                src="./images/Olga_Ivanova.jpg"
                 width="270"
                 height="260"
-                alt="Марта Стюарт"
+                alt="Ольга Иванова"
+              /> -->
+              <img
+                src="./images/Olga_Ivanova_mobile.jpg"
+                width="450"
+                height="320"
+                alt="Ольга Иванова"
               />
               <div class="card__content">
                 <h3 class="card__name">Ольга Иванова</h3>
@@ -353,11 +311,17 @@
             </li>
 
             <li class="card-set__item">
-              <img
-                src="./images/Robert_Jakis.jpg"
+              <!-- <img
+                src="./images/Andrei_Shevchenko.jpg"
                 width="270"
                 height="260"
-                alt="Роберт Джекис"
+                alt="Андрей Шевченко"
+              /> -->
+              <img
+                src="./images/Andrei_Shevchenko_mobile.jpg"
+                width="450"
+                height="320"
+                alt="Андрей Шевченко"
               />
               <div class="card__content">
                 <h3 class="card__name">Андрей Шевченко</h3>
@@ -409,11 +373,17 @@
             </li>
 
             <li class="card-set__item">
-              <img
-                src="./images/Martin_Doe.jpg"
+              <!-- <img
+                src="./images/Ivan_Nikolaev.jpg"
                 width="270"
                 height="260"
-                alt="Мартин Дое"
+                alt="Иван Николаев"
+              /> -->
+              <img
+                src="./images/Ivan_Nikolaev_mobile.jpg"
+                width="450"
+                height="320"
+                alt="Иван Николаев"
               />
               <div class="card__content">
                 <h3 class="card__name">Иван Николаев</h3>
@@ -537,7 +507,7 @@
           </address>
         </div>
 
-        <div class="">
+        <div class="page-footer__socials">
           <b class="appeal">присоединяйтесь</b>
           
           <ul class="socials__list">
@@ -584,7 +554,7 @@
           </ul>
         </div>
         
-        <form>
+        <form class="appeal__form">
             <label for="email" class="appeal">подпишитесь на рассылку</label>
             <div class="appeal__container">
               <input class="appeal__email" type="email" name="email" id="email" placeholder="E-mail">
@@ -602,6 +572,65 @@
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal is-hidden">
+
+        <form class="form" autocomplete="off">
+
+          <div class="close" data-modal-close>
+            <svg class="close--icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-cross_18px"></use>
+            </svg>
+          </div>
+              
+          <h3 class="form__title">Оставьте свои данные, мы вам перезвоним</h3>
+             
+          <label class="form__field">
+            <input class="form__input" type="text" name="name" placeholder=" " autofocus >
+            <span class="form__label">Имя</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </label>
+
+          <label class="form__field">
+            <input class="form__input" type="tel" name="tel" placeholder=" ">
+            <span class="form__label">Телефон</span>
+            <svg class="form__icon" width="18" height="18">
+              <use href="./images/sprite.svg#icon-tel"></use>
+            </svg>                  
+          </label>
+
+          <label class="form__field">                    
+            <input class="form__input" type="email" name="email" placeholder=" ">
+            <span class="form__label">Почта</span>
+            <svg class="form__icon" width="18" height="18">
+               <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+            </label>
+
+           <label class="form__field">                    
+             <textarea class="comment " name="comment" rows="10" placeholder=" "></textarea>
+             <span class="form__label form__label--comment">Комментарий</span>
+           </label>
+
+           <label class="form__field form__field--checkbox">
+             <input type="checkbox" name="policy" class="checkbox">
+             <span class="checkbox__icon"></span>
+             <span class="form__policy">Соглашаюсь с рассылкой и принимаю 
+               <a href="#" class="form__policy--link">Условия договора</a>
+             </span>
+           </label>
+
+           <div class="form__button">
+             <button class="form__button--submit" type="submit">Отправить</button>
+           </div>
+                  
+        </form>
+      </div>
+    </div>
+
 
     <!-- <script>
       const { height: pageHeaderHeight } = document
@@ -612,7 +641,7 @@
     </script> -->
 
 
-<!-- <script>
+<!-- <script> --------------------- (предыдущий)
       const refs = {
         openModalBtn: document.querySelector("[data-modal-open]"),
         closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -651,6 +680,7 @@
     </script>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>

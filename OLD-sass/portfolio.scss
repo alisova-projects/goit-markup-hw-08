@@ -1,0 +1,22 @@
+@import './base/normalize';
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/visually-hidden';
+
+@import './components/shared/common';
+@import './components/shared/logo';
+@import './components/shared/appeal';
+
+@import './components/header/page-header';
+@import './components/header/nav';
+@import './components/header/contacts';
+
+@import './components/portfolio/control';
+@import './components/portfolio/project-gallery';
+
+@import './components/footer/page-footer';
+@import './components/footer/address';
+@import './components/footer/form';
+@import './components/footer/socials';

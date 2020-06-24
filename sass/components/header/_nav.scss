@@ -1,6 +1,6 @@
 /* Navigation */
 .page-header__nav {
-  @include centeredFlex();
+  // @include centeredFlex();
 
   color: $primaryTextColor;
 
@@ -12,7 +12,9 @@
 
 .site-nav {
   @extend %list;
+  display: flex;
   margin-left: 86px;
+  display: none;
 }
 
 .site-nav__item:not(:last-child) {

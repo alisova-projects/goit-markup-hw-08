@@ -1,0 +1,21 @@
+.page-header__logo {
+  @extend %logo;
+  @include colorTextDecor($logoColor);
+}
+
+.page-logo {
+  color: $primaryTextColor;
+
+  &--reverse {
+    color: $tertiaryTextColor;
+  }
+}
+
+.page-footer__logo {
+  @extend %logo;
+  @include colorTextDecor($logoColor);
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  line-height: 1.18;
+}

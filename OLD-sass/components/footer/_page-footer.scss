@@ -1,0 +1,16 @@
+/* Footer */
+.page-footer {
+  color: $tertiaryTextColor;
+  background-color: $tertiaryBgColor;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

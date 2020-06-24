@@ -2,8 +2,10 @@
 
 .contact-info__list {
   @extend %list;
-  align-items: center;
-  margin-left: auto;
+  // display: flex;
+  display: none;
+  // align-items: center;
+  // margin-left: auto;
 
   font-weight: 500;
   font-size: 14px;
@@ -17,7 +19,7 @@
 
 .contact-info__link {
   @include colorTextDecor($secondaryTextColor);
-  @include centeredFlex();
+  // @include centeredFlex();
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -41,27 +43,3 @@
   width: 10px;
   height: 14.94px;
 }
-
-/* .contact-info__link--icon-mail:hover,
-.contact-info__link--icon-mail:focus,
-.contact-info__link--icon-phone:hover,
-.contact-info__link--icon-phone:focus {
-  fill: var(--accent-color);
-} */
-
-/* .contact-info__link--icon::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contact-info__link--icon-mail::before {
-  background-image: url(../images/mail.svg);
-}
-.contact-info__link--icon-phone::before {
-  background-image: url(../images/phone.svg);
-} */

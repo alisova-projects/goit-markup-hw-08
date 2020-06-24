@@ -1,13 +1,15 @@
 /* Our customers */
 
 .customers__container {
-  @extend %container;
+  // @extend %container;
+  @extend %container__mob;
   display: block;
 }
 
 .customers__title {
   font-weight: bold;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 
@@ -15,14 +17,22 @@
 }
 .customers__logo {
   @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
 }
 
 .customers__item {
-  width: calc((100% - #{$width-customers}) / 6);
+  // width: 210px;
+  margin: 15px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // width: calc((100% - #{$width-customers}) / 6);
+  // width: calc((100% - #{$width-customers__mob}) / 2);
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .customers__link--icon {
@@ -33,6 +43,7 @@
   &-background {
     @include colorTextDecor($socialsColor);
     @include centeredFlex();
+    width: 210px;
     height: 90px;
     border-radius: 4px;
 

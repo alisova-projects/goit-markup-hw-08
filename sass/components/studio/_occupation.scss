@@ -1,8 +1,9 @@
 /* Our occupation */
 
 .occupation__container {
-  @extend %container;
-  display: block;
+  // @extend %container;
+  // display: block;
+  display: none;
 }
 
 .occupation__title {
@@ -16,6 +17,7 @@
 
 .occupation__list {
   @extend %list;
+  display: flex;
 }
 
 .occupation__item {

@@ -1,0 +1,55 @@
+.appeal__container {
+  display: flex;
+}
+
+.appeal__email {
+  margin: 0;
+  width: 358px;
+  height: 50px;
+
+  padding: 18px 12px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: transparent;
+
+  color: $tertiaryTextColor;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.page-footer__button {
+  @extend %button;
+  display: inline-flex;
+  justify-content: flex-start;
+
+  padding: 10px 29px;
+
+  &--icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    /* align-self: flex-end; */
+    align-self: center;
+    fill: currentColor;
+  }
+}
+
+/* .page-footer__button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url('../images/symbol-defs.svg#icon-send');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: flex-end;
+} */
