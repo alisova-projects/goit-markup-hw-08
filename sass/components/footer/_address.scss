@@ -1,5 +1,11 @@
 .page-footer__address {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+  }
 }
 
 .address {
@@ -12,9 +18,16 @@
   font-style: normal;
   text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
   &__text {
-    // margin-bottom: 9px;
     margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -23,5 +36,9 @@
 
   &:not(:last-child) {
     margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9px;
+    }
   }
 }

@@ -1,18 +1,34 @@
-.appeal__container {
-  // display: flex;
-}
 .appeal__form {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    align-self: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    align-self: baseline;
+  }
+}
+
+.appeal__container {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .appeal__email {
   margin: 0;
-  // width: 358px;
+
   width: 450px;
   height: 50px;
 
   padding: 18px 12px;
-  // margin-right: 12px;
+
   margin-bottom: 20px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -21,6 +37,16 @@
   background-color: transparent;
 
   color: $tertiaryTextColor;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 
   &::placeholder {
     font-size: 16px;
@@ -46,15 +72,3 @@
     fill: currentColor;
   }
 }
-
-/* .page-footer__button::after {
-  content: '';
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url('../images/symbol-defs.svg#icon-send');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-self: flex-end;
-} */

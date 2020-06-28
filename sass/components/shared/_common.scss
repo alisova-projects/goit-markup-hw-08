@@ -17,6 +17,10 @@ body {
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 textarea {

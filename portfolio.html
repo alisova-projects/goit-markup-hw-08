@@ -15,43 +15,88 @@
   <body>
     
     <!--Шапка сайта-->
-    <header class="page-header">
-      <div class="page-header__container page-header__container--border">
-        <nav class="page-header__nav">
-          <a href="./index.html" class="page-header__logo"><span lang="en">Web<span lang="en"  class="page-logo"> Studio</span></a>
-    
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./contacts.html" class="site-nav__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+    <header class="page-header  page-header--border">
+      <div class="page-header__container">
+        <a href="./index.html" class="page-header__logo">
+          <span class="page-header__logo--space" lang="en">Web</span>
+          <span class="page-logo" lang="en">Studio</span>
+        </a>
 
-        <ul class="contact-info__list">
-          <li class="contact-info__item">
-            <a href="mailto:info@devstudio.com" aria-label="Электронная почта"
-            class="contact-info__link">
-              <svg class="contact-info__link--icon-mail" width="16" height="11.2">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-            info@devstudio.com</a>
-          </li>
-          <li class="contact-info__item">
-            <a href="tel:+380961111111" aria-label="Телефон"
-            class="contact-info__link">
-              <svg class="contact-info__link--icon-phone" width="10" height="15">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>   
-            +38 096 111 11 11</a>
-          </li>
-        </ul>
+        <button
+          type="button"
+          class="menu__button"
+          aria-expanded="false"
+          aria-controls="page-header__menu"
+          data-menu-button
+        >
+          <svg
+            class="menu__button--icon"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              href="./images/sprite.svg#icon-cross_40px"
+              class="menu__button--icon-cross_40px"
+            ></use>
+            <use
+              href="./images/sprite.svg#icon-menu"
+              class="menu__button--icon-menu"
+            ></use>
+          </svg>
+        </button>
 
+        <div class="page-header__menu" id="page-header__menu" data-menu>
+          <nav class="page-header__nav">
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./contacts.html" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="page-header__contacts">
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  aria-label="Электронная почта"
+                  class="contact-info__link"
+                >
+                  <svg
+                    class="contact-info__link--icon-mail"
+                    width="16"
+                    height="11.2"
+                  >
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-info__item">
+                <a
+                  href="tel:+380961111111"
+                  aria-label="Телефон"
+                  class="contact-info__link"
+                >
+                  <svg
+                    class="contact-info__link--icon-phone"
+                    width="10"
+                    height="15"
+                  >
+                    <use href="./images/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -59,7 +104,7 @@
     <!-- Белый фон -->
     <main class="page-content">
       <!-- Фильтр -->
-      <section>
+      <section class="section__project">
         <div class="project__container">
         <h1 class="visually-hidden">Группы проектов</h1>
         <ul class="filter__list">
@@ -223,7 +268,7 @@
 
         </ul>
         </div>
-      </section>
+      </section class="section__project">
     </main>
 
 
@@ -246,7 +291,7 @@
           </address>
         </div>
 
-        <div class="">
+        <div class="page-footer__socials">
           <b class="appeal">присоединяйтесь</b>
           
           <ul class="socials__list">
@@ -254,7 +299,7 @@
               <a
                 href="https://www.instagram.com/"
                 aria-label="Ссылка на Instagram"
-                class="socials__link">
+                class="link socials__link">
                  <svg class="socials__link--icon" width="20" height="20">
                    <use href="./images/sprite.svg#icon-instagram"></use>
                  </svg>
@@ -264,7 +309,7 @@
               <a
                 href="https://twitter.com/"
                 aria-label="Ссылка на Twitter"
-                class="socials__link">
+                class="link socials__link">
                 <svg class="socials__link--icon" width="20" height="16.25">
                    <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
@@ -274,7 +319,7 @@
               <a
                 href="https://www.facebook.com"
                 aria-label="Ссылка на Facebook"
-                class="socials__link">
+                class="link socials__link">
                  <svg class="socials__link--icon" width="10" height="20">
                    <use href="./images/sprite.svg#icon-facebook"></use>
                  </svg>
@@ -284,7 +329,7 @@
               <a
                 href="https://www.linkedin.com/"
                 aria-label="Ссылка на LinkedIn"
-                class="socials__link">
+                class="link socials__link">
                  <svg class="socials__link--icon" width="20" height="20">
                    <use href="./images/sprite.svg#icon-linkedin"></use>
                  </svg> 
@@ -293,7 +338,7 @@
           </ul>
         </div>
         
-        <form>
+        <form class="appeal__form">
             <label for="email" class="appeal">подпишитесь на рассылку</label>
             <div class="appeal__container">
               <input class="appeal__email" type="email" name="email" id="email" placeholder="E-mail">
@@ -314,5 +359,8 @@
       
       </html>
     </main>
+
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>

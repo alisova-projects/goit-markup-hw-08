@@ -2,19 +2,47 @@
 .page-footer {
   color: $tertiaryTextColor;
   background-color: $tertiaryBgColor;
-  width: 480px;
+
+  @media screen and (max-width: 767px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+
+    @include centeredFlex();
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
 
   &__container {
-    // @extend %container;
-    @extend %container__mob;
+    @extend %container;
 
-    // display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 603px;
+    @media screen and (max-width: 767px) {
+      width: 480px;
+      height: 603px;
+    }
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+      height: 463px;
+
+      display: inline-flex;
+      flex-wrap: wrap;
+
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      align-items: baseline;
+      justify-content: space-between;
+
+      width: 1200px;
+      height: 252px;
+      padding: 60px 15px;
+    }
   }
 }

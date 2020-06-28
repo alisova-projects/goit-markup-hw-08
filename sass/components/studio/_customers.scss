@@ -1,19 +1,28 @@
 /* Our customers */
 
+.section__customers {
+  min-width: 480px;
+
+  text-align: center;
+}
+
 .customers__container {
-  // @extend %container;
-  @extend %container__mob;
+  @extend %container;
   display: block;
 }
 
 .customers__title {
+  margin-bottom: 30px;
+
   font-weight: bold;
-  // font-size: 36px;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
 
-  margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .customers__logo {
   @extend %list;
@@ -27,12 +36,17 @@
   // width: 210px;
   margin: 15px;
   flex-basis: calc((100% - 2 * 30px) / 2);
+  height: auto;
 
-  // width: calc((100% - #{$width-customers}) / 6);
-  // width: calc((100% - #{$width-customers__mob}) / 2);
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  @media screen and (min-width: 768px) {
+    // width: 226px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    // width: 170px;
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
 }
 
 .customers__link--icon {
@@ -43,7 +57,7 @@
   &-background {
     @include colorTextDecor($socialsColor);
     @include centeredFlex();
-    width: 210px;
+    // width: 210px;
     height: 90px;
     border-radius: 4px;
 
