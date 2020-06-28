@@ -184,7 +184,12 @@
             <li class="occupation__item">
               <a href="#" class="occupation__link">
                 <img
-                  src="./images/desktop_apps&project_9.jpg"
+                  loading="lazy"
+                  srcset="
+                    ./images/desktop_apps&project_9_desk-370/img.jpg    1x,
+                    ./images/desktop_apps&project_9_desk-370/img@2x.jpg 2x
+                  "
+                  src="./images/desktop_apps&project_9_desk-370/img.jpg"
                   width="370"
                   height="294"
                   alt="Десктопные приложения"
@@ -195,7 +200,12 @@
             <li class="occupation__item">
               <a href="#" class="occupation__link">
                 <img
-                  src="./images/mobile_apps.jpg"
+                  loading="lazy"
+                  srcset="
+                    ./images/mobile_apps_desk-370/img.jpg    1x,
+                    ./images/mobile_apps_desk-370/img@2x.jpg 2x
+                  "
+                  src="/images/mobile_apps_desk-370/img.jpg"
                   width="370"
                   height="294"
                   alt="Мобильные приложения"
@@ -206,7 +216,12 @@
             <li class="occupation__item">
               <a href="#" class="occupation__link">
                 <img
-                  src="./images/design_solutions&project_6.jpg"
+                  loading="lazy"
+                  srcset="
+                    ./images/design_solutions&project_6_desk-370/img.jpg    1x,
+                    ./images/design_solutions&project_6_desk-370/img@2x.jpg 2x
+                  "
+                  src="./images/design_solutions&project_6_desk-370/img.jpg"
                   width="370"
                   height="294"
                   alt="Дизайнерские решения"
@@ -227,21 +242,105 @@
 
           <ul class="team__card-set">
             <li class="card-set__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/Nikolai_Kucherenko_mob-450/img-webP.webp    1x,
+                    ./images/Nikolai_Kucherenko_mob-450/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Nikolai_Kucherenko_tab-354/img-webP.webp    1x,
+                    ./images/Nikolai_Kucherenko_tab-354/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Nikolai_Kucherenko_tab-354/img.jpg    1x,
+                    ./images/Nikolai_Kucherenko_tab-354/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Nikolai_Kucherenko_desk-270/img-webP.webp    1x,
+                    ./images/Nikolai_Kucherenko_desk-270/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Nikolai_Kucherenko_desk-270/img.jpg    1x,
+                    ./images/Nikolai_Kucherenko_desk-270/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  loading="lazy"
+                  srcset="
+                    ./images/Nikolai_Kucherenko_mob-450/img.jpg    1x,
+                    ./images/Nikolai_Kucherenko_mob-450/img@2x.jpg 2x
+                  "
+                  src="./images/Nikolai_Kucherenko_mob-450/img.jpg"
+                  alt="Николай Кучеренко"
+                />
+              </picture>
+
+              <!-- <picture>
+                <source
+                  srcset="
+                    ./images/Nikolai_Kucherenko_mob-450/img-webP.webp    1x,
+                    ./images/Nikolai_Kucherenko_mob-450/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <img
+                  loading="lazy"
+                  srcset="
+                    ./images/Nikolai_Kucherenko_mob-450/img.jpg    1x,
+                    ./images/Nikolai_Kucherenko_mob-450/img@2x.jpg 2x
+                  "
+                  src="./images/Nikolai_Kucherenko_mob-450/img.jpg"
+                  alt="Николай Кучеренко"
+                />
+              </picture> -->
+
               <!-- <img
-                src="./images/Nikolai_Kucherenko.jpg"
-                width="270"
-                height="260"
+                loading="lazy"
+                srcset="
+                  ./images/Nikolai_Kucherenko_mob-450/img.jpg    450w,
+                  ./images/Nikolai_Kucherenko_mob-450/img@2x.jpg 900w
+                "
+                src="./images/Nikolai_Kucherenko_mob-450/img.jpg"
+                alt="Николай Кучеренко"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              /> -->
+
+              <!-- <img
+                loading="lazy"
+                srcset="
+                  ./images/Nikolai_Kucherenko_mob-450/img.jpg    1x,
+                  ./images/Nikolai_Kucherenko_mob-450/img@2x.jpg 2x
+                "
+                src="./images/Nikolai_Kucherenko_mob-450/img.jpg"
                 alt="Николай Кучеренко"
               /> -->
-              <img
-                src="./images/Nikolai_Kucherenko_mobile.jpg"
-                width="450"
-                height="320"
-                alt="Николай Кучеренко"
-              />
               <div class="card__content">
                 <h3 class="card__name">Николай Кучеренко</h3>
-                <p lang="en" class="card__text">Designer</p>
+                <p lang="en" class="card__text">Product Designer</p>
 
                 <ul class="card__socials">
                   <li class="socials__item">
@@ -309,18 +408,61 @@
             </li>
 
             <li class="card-set__item">
-              <!-- <img
-                src="./images/Olga_Ivanova.jpg"
-                width="270"
-                height="260"
-                alt="Ольга Иванова"
-              /> -->
-              <img
-                src="./images/Olga_Ivanova_mobile.jpg"
-                width="450"
-                height="320"
-                alt="Ольга Иванова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Olga_Ivanova_mob-450/img-webP.webp    1x,
+                    ./images/Olga_Ivanova_mob-450/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Olga_Ivanova_tab-354/img-webP.webp    1x,
+                    ./images/Olga_Ivanova_tab-354/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Olga_Ivanova_tab-354/img.jpg    1x,
+                    ./images/Olga_Ivanova_tab-354/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Olga_Ivanova_desk-270/img-webP.webp    1x,
+                    ./images/Olga_Ivanova_desk-270/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Olga_Ivanova_desk-270/img.jpg    1x,
+                    ./images/Olga_Ivanova_desk-270/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  srcset="
+                    ./images/Olga_Ivanova_mob-450/img.jpg    1x,
+                    ./images/Olga_Ivanova_mob-450/img@2x.jpg 2x
+                  "
+                  src="./images/Olga_Ivanova_mob-450/img.jpg"
+                  alt="Ольга Иванова"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__name">Ольга Иванова</h3>
                 <p lang="en" class="card__text">Frontend Developer</p>
@@ -391,18 +533,61 @@
             </li>
 
             <li class="card-set__item">
-              <!-- <img
-                src="./images/Andrei_Shevchenko.jpg"
-                width="270"
-                height="260"
-                alt="Андрей Шевченко"
-              /> -->
-              <img
-                src="./images/Andrei_Shevchenko_mobile.jpg"
-                width="450"
-                height="320"
-                alt="Андрей Шевченко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Andrei_Shevchenko_mob-450/img-webP.webp    1x,
+                    ./images/Andrei_Shevchenko_mob-450/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Andrei_Shevchenko_tab-354/img-webP.webp    1x,
+                    ./images/Andrei_Shevchenko_tab-354/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Andrei_Shevchenko_tab-354/img.jpg    1x,
+                    ./images/Andrei_Shevchenko_tab-354/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Andrei_Shevchenko_desk-270/img-webP.webp    1x,
+                    ./images/Andrei_Shevchenko_desk-270/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Andrei_Shevchenko_desk-270/img.jpg    1x,
+                    ./images/Andrei_Shevchenko_desk-270/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  srcset="
+                    ./images/Andrei_Shevchenko_mob-450/img.jpg    1x,
+                    ./images/Andrei_Shevchenko_mob-450/img@2x.jpg 2x
+                  "
+                  src="./images/Andrei_Shevchenko_mob-450/img.jpg"
+                  alt="Андрей Шевченко"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__name">Андрей Шевченко</h3>
                 <p lang="en" class="card__text">Marketing</p>
@@ -473,18 +658,61 @@
             </li>
 
             <li class="card-set__item">
-              <!-- <img
-                src="./images/Ivan_Nikolaev.jpg"
-                width="270"
-                height="260"
-                alt="Иван Николаев"
-              /> -->
-              <img
-                src="./images/Ivan_Nikolaev_mobile.jpg"
-                width="450"
-                height="320"
-                alt="Иван Николаев"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/Ivan_Nikolaev_mob-450/img-webP.webp    1x,
+                    ./images/Ivan_Nikolaev_mob-450/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Ivan_Nikolaev_tab-354/img-webP.webp    1x,
+                    ./images/Ivan_Nikolaev_tab-354/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/Ivan_Nikolaev_tab-354/img.jpg    1x,
+                    ./images/Ivan_Nikolaev_tab-354/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Ivan_Nikolaev_desk-270/img-webP.webp    1x,
+                    ./images/Ivan_Nikolaev_desk-270/img@2x-webP.webp 2x
+                  "
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/Ivan_Nikolaev_desk-270/img.jpg    1x,
+                    ./images/Ivan_Nikolaev_desk-270/img@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  loading="lazy"
+                  srcset="
+                    ./images/Ivan_Nikolaev_mob-450/img.jpg    1x,
+                    ./images/Ivan_Nikolaev_mob-450/img@2x.jpg 2x
+                  "
+                  src="./images/Ivan_Nikolaev_mob-450/img.jpg"
+                  alt="Иван Николаев"
+                />
+              </picture>
+
               <div class="card__content">
                 <h3 class="card__name">Иван Николаев</h3>
                 <p lang="en" class="card__text">UI Designer</p>

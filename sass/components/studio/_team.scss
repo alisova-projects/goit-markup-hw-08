@@ -51,8 +51,8 @@
 
   @media screen and (min-width: 768px) {
     // width: 354px;
-    flex-basis: calc((100% - 2 * 30px) / 2);
     // height: 422px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
@@ -77,13 +77,16 @@
 }
 
 .card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
   margin-bottom: 10px;
 }
 
 .card__text {
   color: $secondaryTextColor;
 
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -94,11 +97,14 @@
 .card__socials {
   @extend %list;
   display: flex;
-  justify-content: space-between;
-  // padding-right: 32px;
-  // padding-left: 32px;
+  justify-content: center;
   padding-right: 122px;
   padding-left: 122px;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 
   &:not(:last-child) {
     margin-right: 10px;
