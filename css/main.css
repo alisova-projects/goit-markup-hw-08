@@ -1079,6 +1079,9 @@ img {
 }
 
 .card-set__item {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  overflow: hidden;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -1110,12 +1113,8 @@ img {
 }
 
 .card__content {
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  overflow: hidden;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
+  height: 100%;
   padding-top: 30px;
   padding-bottom: 24px;
 }
@@ -1613,20 +1612,14 @@ img {
 
 .modal {
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
-  -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  width: 450px;
+  max-width: 450px;
   min-height: 609px;
+  padding: 40px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -1642,7 +1635,14 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+    -webkit-transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 528px;
+    width: 100%;
     height: 581px;
   }
   .modal.is-hidden {
@@ -1688,8 +1688,7 @@ img {
 }
 
 .form {
-  width: 450px;
-  padding: 40px;
+  width: 370px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -1701,7 +1700,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .form {
-    width: 448px;
+    max-width: 448px;
     width: 100%;
   }
 }
@@ -1746,10 +1745,13 @@ img {
 
 .form__field input[type='checkbox'] {
   position: absolute;
-  margin-right: 9px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__field--checkbox {
